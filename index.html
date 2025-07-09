@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/main_logo.png" type="image/png">
+    <title>FlyRoad Dispatch - Where Roads Meet Reliability</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Toastify CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <!-- <h2>🚛 FlyRoad Dispatch</h2> -->
+          <img src="./assets/main_logo.png" alt="Fly Road Dispatch" width="70px" height="70px" >
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" data-page="home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="#service" class="nav-link" data-page="service">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hiring" class="nav-link" data-page="hiring">HIRING</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-page="about">ABOUT</a>
+          </li>
+        </ul>
+        <div class="nav-hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu">
+        <div class="mobile-menu-close">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul class="mobile-nav-menu">
+          <li>
+            <a href="#home" class="mobile-nav-link" data-page="home">HOME</a>
+          </li>
+          <li>
+            <a href="#service" class="mobile-nav-link" data-page="service"
+              >SERVICE</a
+            >
+          </li>
+          <li>
+            <a href="#hiring" class="mobile-nav-link" data-page="hiring"
+              >HIRING</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="mobile-nav-link" data-page="about">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Home Page -->
+      <div id="home-page" class="page active">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-bg">
+            <img src="./assets/hero.webp" alt="Hero Background" />
+          </div>
+          <div class="hero-content">
+            <div class="container">
+              <h1 class="hero-title" data-aos="fade-up">
+                🚛 FlyRoad Dispatch – Where Roads Meet Reliability
+              </h1>
+              <p
+                class="hero-description"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Whether you're a shipper needing reliable freight solutions or a
+                driver/dispatcher seeking a career that pays and respects,
+                FlyRoad Dispatch is your trusted partner on the road.
+              </p>
+              <button
+                class="cta-button"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                onclick="openContactModal()"
+              >
+                Work with us
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Service Section -->
+        <section class="service-section">
+          <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+
+            <!-- Brokers Card -->
+            <div class="service-card" data-aos="fade-right">
+              <div class="service-content">
+                <h3>🧭 For Brokers, Shippers & Manufacturers</h3>
+                <p>
+                  We work with brokers and manufacturers across North America to
+                  move freight with unmatched reliability and speed. Whether
+                  it's Dry Van, Reefer, or Flatbed—our experienced dispatchers
+                  and dedicated carriers ensure your cargo is delivered safely
+                  and on time.
+                </p>
+                <div class="service-features">
+                  <h4>✅ Why Choose FlyRoad?</h4>
+                  <ul>
+                    <li>✔️ Verified Owner Operators & Fleets</li>
+                    <li>✔️ 24/7 Load Tracking & Updates</li>
+                    <li>✔️ On-Time Pickups & Deliveries</li>
+                    <li>✔️ Long-Term Freight Partnerships</li>
+                    <li>✔️ Instant Communication – No ghosting, no delays</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service-image">
+                <img src="./assets/container.webp" alt="Brokers Service" />
+              </div>
+            </div>
+
+            <!-- Careers Card -->
+            <div class="service-card reverse" data-aos="fade-left">
+              <div class="service-content">
+                <h3>👷‍♂️ For Drivers, Dispatchers & Admins – Join Our Team</h3>
+                <p>
+                  FlyRoad Dispatch isn't just a company—it's a fast-growing
+                  logistics family. We're looking for ambitious, reliable
+                  individuals who want to grow with us and build a future in the
+                  fast-moving world of freight and dispatching.
+                </p>
+                <div class="service-features">
+                  <h4>❤️ Why Work With FlyRoad?</h4>
+                  <ul>
+                    <li>✔️ Competitive Pay + Bonuses</li>
+                    <li>✔️ Remote Flexibility</li>
+                    <li>✔️ Training & Skill Development</li>
+                    <li>✔️ Work With U.S. Clients</li>
+                    <li>✔️ Supportive, Fast-Paced Team Culture</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="service-image">
+                <img src="./assets/truck.webp" alt="Careers Service" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Equipment Section -->
+        <section class="equipment-section">
+          <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Equipment Types</h2>
+            <div class="equipment-grid">
+              <div
+                class="equipment-card"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                <div class="equipment-icon">
+                  <i class="fas fa-truck"></i>
+                </div>
+                <div class="equipment-info">
+                  <h3>Dry Van</h3>
+                  <p>
+                    Standard enclosed trailers for general freight
+                    transportation with maximum protection from weather.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="equipment-card"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <div class="equipment-icon">
+                  <i class="fas fa-snowflake"></i>
+                </div>
+                <div class="equipment-info">
+                  <h3>Reefer</h3>
+                  <p>
+                    Temperature-controlled trailers for perishable goods
+                    requiring specific climate conditions.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="equipment-card"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <div class="equipment-icon">
+                  <i class="fas fa-pallet"></i>
+                </div>
+                <div class="equipment-info">
+                  <h3>Flatbed</h3>
+                  <p>
+                    Open trailers for oversized cargo, construction materials,
+                    and heavy equipment transport.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="equipment-card"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <div class="equipment-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="equipment-info">
+                  <h3>Power Only</h3>
+                  <p>
+                    Truck-only service for customers who provide their own
+                    trailers or containers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+          <div class="container">
+            <div class="about-content">
+              <div class="about-text" data-aos="fade-right">
+                <h2>🌐 About FlyRoad Dispatch</h2>
+                <h3>🚛 FlyRoad Dispatch – Where Roads Meet Reliability</h3>
+                <p>
+                  At FlyRoad Dispatch, we do more than move freight — we move
+                  businesses forward. From the icy lanes of Canada to the
+                  southern routes of Mexico, and across every major U.S. highway
+                  in between, we keep your logistics running smoothly, so you
+                  can focus on growth — not guesswork.
+                </p>
+              </div>
+              <div class="about-image" data-aos="fade-left">
+                <img src="./assets/about.webp" alt="About FlyRoad Dispatch" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+          <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+              ❓ Frequently Asked Questions (FAQs)
+            </h2>
+            <div class="faq-container">
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-question">
+                  <h3>Do you only work with U.S.-based clients?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    No. While the majority of our clients are based in the U.S.
+                    and Canada, our dispatching and admin teams operate
+                    globally. We're proud to be India-based and serve North
+                    American logistics with precision, communication, and
+                    round-the-clock reliability.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-question">
+                  <h3>What types of equipment do you dispatch for?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We currently support Dry Vans, Reefers, Flatbeds, and Power
+                    Only. Our team is experienced in lane planning, load
+                    optimization, and carrier-driver matching across all four
+                    equipment types.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq-question">
+                  <h3>
+                    I'm a new owner-operator. Can I still work with FlyRoad
+                    Dispatch?
+                  </h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Absolutely. We support both new authorities (MCs) and
+                    veteran carriers. We can help with paperwork, onboarding,
+                    factoring integration, and getting you high-paying loads
+                    even if you're just starting out.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="faq-question">
+                  <h3>What kind of remote roles do you hire for?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>We regularly hire for:</p>
+                  <ul>
+                    <li>✔️ Freight Dispatchers</li>
+                    <li>✔️ Customer Support Executives</li>
+                    <li>✔️ Load Booking Specialists</li>
+                    <li>✔️ Sales & Onboarding Agents</li>
+                  </ul>
+                  <p>
+                    If you're sharp, driven, and ready to work U.S. shifts—we
+                    want you on our team.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="faq-question">
+                  <h3>How fast can you find me a load?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    In most cases, our dispatchers can find a suitable load
+                    within 30 minutes of your availability, thanks to our access
+                    to premium load boards and broker relationships. Timing may
+                    vary based on lane, equipment, and day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Service Page -->
+      <div id="service-page" class="page">
+        <section class="page-hero">
+          <div class="container">
+            <h1 class="page-title">🚛 Our Services</h1>
+            <p class="page-subtitle">
+              Reliable Dispatch. Seamless Logistics. Maximum Profits.
+            </p>
+            <p class="page-description">
+              At FlyRoad Dispatch, we bridge the gap between freight demand and
+              driver availability with precision and care. Whether you're an
+              owner-operator, fleet, or a freight broker/manufacturer, we
+              deliver services tailored to your success.
+            </p>
+          </div>
+        </section>
+
+        <!-- For Owner-Operators & Fleets -->
+        <section class="service-detail-section">
+          <div class="container">
+            <div class="service-detail-card" data-aos="fade-right">
+              <h2>🔹 For Owner-Operators & Fleets</h2>
+              <h3>💼 Dispatch Services That Keep You Moving</h3>
+              <p>
+                We don't just find you loads—we find you the best-paying,
+                low-stress loads so you can focus on driving while we handle the
+                rest.
+              </p>
+
+              <div class="service-features">
+                <h4>✅ What's Included:</h4>
+                <ul>
+                  <li>
+                    ✔️ 🔍 Load Hunting – Daily load sourcing from top load
+                    boards
+                  </li>
+                  <li>
+                    ✔️ 💬 Rate Negotiation – We negotiate high rates that work
+                    for you
+                  </li>
+                  <li>
+                    ✔️ 📑 Paperwork & Compliance – Broker packets, rate cons,
+                    invoicing—done for you
+                  </li>
+                  <li>
+                    ✔️ 📱 24/7 Driver Support – Real-time load updates and issue
+                    resolution
+                  </li>
+                  <li>
+                    ✔️ 🚫 No Forced Dispatch – You choose the load, we handle
+                    the back-end
+                  </li>
+                  <li>
+                    ✔️ 📊 Weekly Reports – Transparent load and revenue
+                    summaries
+                  </li>
+                </ul>
+              </div>
+
+              <div class="equipment-support">
+                <h4>🛠️ We support:</h4>
+                <p>Dry Van | Reefer | Flatbed | Power Only</p>
+              </div>
+
+              <div class="service-result">
+                <h4>📈 Result?</h4>
+                <p>More loaded miles. Less downtime. Bigger weekly pay.</p>
+              </div>
+
+              <button class="service-cta-button" onclick="openContactModal()">
+                Get Started With Dispatching
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- For Brokers, Shippers & Manufacturers -->
+        <section class="service-detail-section">
+          <div class="container">
+            <div class="service-detail-card" data-aos="fade-left">
+              <h2>🔹 For Brokers, Shippers & Manufacturers</h2>
+              <h3>🚚 Freight Coverage You Can Count On</h3>
+              <p>
+                Need reliable trucks and on-time deliveries? We work with a
+                network of verified U.S.-based carriers to ensure your freight
+                moves fast, safe, and cost-effectively.
+              </p>
+
+              <div class="service-features">
+                <h4>🤝 Our Solutions:</h4>
+                <ul>
+                  <li>✔️ Nationwide Carrier Network</li>
+                  <li>✔️ ⏱️ Same-Day & Scheduled Pickups</li>
+                  <li>✔️ 📦 Real-Time Load Tracking</li>
+                  <li>✔️ 🛡️ Insured & Compliant Carriers</li>
+                  <li>✔️ 📞 Instant Communication</li>
+                  <li>✔️ 📊 Custom Reporting & Updates</li>
+                </ul>
+              </div>
+
+              <p>
+                Whether you need a single load moved or a long-term partnership,
+                FlyRoad Dispatch delivers.
+              </p>
+
+              <button class="service-cta-button" onclick="openContactModal()">
+                Request Freight Coverage
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Additional Support Services -->
+        <section class="service-detail-section">
+          <div class="container">
+            <div class="service-detail-card">
+              <h2>🔹 Additional Support Services</h2>
+              <ul class="additional-services">
+                <li>✔️ 🧾 Billing & Invoicing Assistance</li>
+                <li>✔️ 🛠️ Carrier Onboarding for Brokers</li>
+                <li>
+                  ✔️ 📈 New MC Authority Support – Specialized help for newly
+                  registered carriers
+                </li>
+                <li>✔️ 🌐 Factoring Integration Support</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+          <div class="container">
+            <h2 class="section-title">❓ Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Do you only work with U.S.-based clients?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    No. While the majority of our clients are based in the U.S.
+                    and Canada, our dispatching and admin teams operate
+                    globally. We're proud to be India-based and serve North
+                    American logistics with precision, communication, and
+                    round-the-clock reliability.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What types of equipment do you dispatch for?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We currently support Dry Vans, Reefers, Flatbeds, and Power
+                    Only. Our team is experienced in lane planning, load
+                    optimization, and carrier-driver matching across all four
+                    equipment types.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>
+                    I'm a new owner-operator. Can I still work with FlyRoad
+                    Dispatch?
+                  </h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Absolutely. We support both new authorities (MCs) and
+                    veteran carriers. We can help with paperwork, onboarding,
+                    factoring integration, and getting you high-paying loads
+                    even if you're just starting out.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What kind of remote roles do you hire for?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>We regularly hire for:</p>
+                  <ul>
+                    <li>✔️ Freight Dispatchers</li>
+                    <li>✔️ Customer Support Executives</li>
+                    <li>✔️ Load Booking Specialists</li>
+                    <li>✔️ Sales & Onboarding Agents</li>
+                  </ul>
+                  <p>
+                    If you're sharp, driven, and ready to work U.S. shifts—we
+                    want you on our team.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How fast can you find me a load?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    In most cases, our dispatchers can find a suitable load
+                    within 30 minutes of your availability, thanks to our access
+                    to premium load boards and broker relationships. Timing may
+                    vary based on lane, equipment, and day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Hiring Page -->
+      <div id="hiring-page" class="page">
+        <section class="page-hero">
+          <div class="container">
+            <h1 class="page-title">👥 Join the FlyRoad Dispatch Team</h1>
+            <p class="page-subtitle">
+              Work Remotely. Grow Globally. Earn Confidently.
+            </p>
+            <p class="page-description">
+              At FlyRoad Dispatch, we're not just building a team — we're
+              building a movement in logistics. Whether you're based in the U.S.
+              or working remotely, we offer you a platform to scale your income,
+              sharpen your skills, and thrive in a high-performance logistics
+              environment.
+            </p>
+          </div>
+        </section>
+
+        <!-- Open Positions Alert -->
+        <section class="hiring-alert">
+          <div class="container">
+            <div class="alert-box">
+              <h3>🚨 Open Remote Positions</h3>
+              <p>
+                All roles are remote | Serve U.S. clients | Paid training +
+                bonuses
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Job Positions -->
+        <section class="job-positions">
+          <div class="container">
+            <!-- Freight Dispatcher -->
+            <div class="job-card">
+              <div class="job-header">
+                <h3>📍 1. Freight Dispatcher (Remote / U.S. Based)</h3>
+              </div>
+              <div class="job-description">
+                <p>
+                  As a dispatcher at FlyRoad, you'll be the heartbeat of the
+                  operation — sourcing high-paying loads, negotiating with
+                  brokers, and keeping communication flowing between carriers
+                  and clients. If you understand U.S. freight lanes, can
+                  multitask under pressure, and speak fluent English, you're
+                  exactly who we're looking for. Experience with DAT, Truckstop,
+                  and rate confirmations will make you shine. Must be available
+                  during U.S. hours (EST).
+                </p>
+              </div>
+              <div class="job-requirements">
+                <h4>✔️ Requirements</h4>
+                <ul>
+                  <li>
+                    ✔️ Strong knowledge of U.S. freight lanes, regions & peak
+                    hours
+                  </li>
+                  <li>
+                    ✔️ Fluent English (spoken & written) for broker and driver
+                    communication
+                  </li>
+                  <li>
+                    ✔️ Prior experience with load boards (DAT, Truckstop) and
+                    rate confirmations
+                  </li>
+                  <li>
+                    ✔️ Ability to multitask and stay sharp during U.S. business
+                    hours (EST)
+                  </li>
+                  <li>
+                    ✔️ Experience in dispatching is a plus — but drive, logic,
+                    and hunger matter more
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="apply-button"
+                onclick="applyForJob('Freight Dispatcher')"
+              >
+                Apply for Dispatcher Role
+              </button>
+            </div>
+
+            <!-- Customer Support Executive -->
+            <div class="job-card">
+              <div class="job-header">
+                <h3>💬 2. Customer Support Executive</h3>
+              </div>
+              <div class="job-description">
+                <p>
+                  We need someone calm, clear, and quick — someone who thrives
+                  under pressure and knows how to talk to people. You'll handle
+                  client and carrier communication, track shipments, and resolve
+                  issues smoothly. Prior support experience is a bonus, but what
+                  matters most is your ability to stay composed and reliable
+                  during a fast-paced U.S. shift.
+                </p>
+              </div>
+              <div class="job-requirements">
+                <h4>✔️ Requirements</h4>
+                <ul>
+                  <li>✔️ Excellent verbal and written English communication</li>
+                  <li>
+                    ✔️ Quick problem-solving skills and ability to manage
+                    real-time shipment updates
+                  </li>
+                  <li>
+                    ✔️ Organized with handling documents, load sheets, and
+                    broker updates
+                  </li>
+                  <li>✔️ Available for night/U.S. shifts (EST hours)</li>
+                  <li>
+                    ✔️ Prior logistics or support experience is appreciated, but
+                    not mandatory
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="apply-button"
+                onclick="applyForJob('Customer Support Executive')"
+              >
+                Apply for Support Executive Role
+              </button>
+            </div>
+
+            <!-- Load Booking Specialist -->
+            <div class="job-card">
+              <div class="job-header">
+                <h3>📦 3. Load Booking Specialist</h3>
+              </div>
+              <div class="job-description">
+                <p>
+                  If you're someone who loves numbers, patterns, and the thrill
+                  of negotiation — this role is for you. You'll scout premium
+                  freight, match it with available trucks, and handle all
+                  necessary documentation. A sharp eye for rates and
+                  understanding of U.S. lanes will set you apart. If you know
+                  the difference between a good load and a great one — we want
+                  to hear from you.
+                </p>
+              </div>
+              <div class="job-requirements">
+                <h4>✔️ Requirements</h4>
+                <ul>
+                  <li>
+                    ✔️ Analytical mindset — understands freight lanes, price
+                    trends, and negotiation timing
+                  </li>
+                  <li>
+                    ✔️ Experience using DAT, Truckstop, or similar platforms
+                  </li>
+                  <li>
+                    ✔️ Familiarity with broker paperwork (rate confirmations,
+                    packets)
+                  </li>
+                  <li>
+                    ✔️ Attention to detail when matching carriers to load types
+                  </li>
+                  <li>
+                    ✔️ Confident communicator who can spot profitable
+                    opportunities
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="apply-button"
+                onclick="applyForJob('Load Booking Specialist')"
+              >
+                Apply for Load Booking Role
+              </button>
+            </div>
+
+            <!-- Sales & Onboarding Agent -->
+            <div class="job-card">
+              <div class="job-header">
+                <h3>🧲 4. Sales & Onboarding Agent</h3>
+              </div>
+              <div class="job-description">
+                <p>
+                  This role is for someone who enjoys building relationships and
+                  helping new clients get started. You'll handle initial client
+                  contact, explain our services, and guide new carriers through
+                  the onboarding process. Strong communication skills and sales
+                  experience are preferred.
+                </p>
+              </div>
+              <div class="job-requirements">
+                <h4>✔️ Requirements</h4>
+                <ul>
+                  <li>
+                    ✔️ Strong communication and persuasion skills (spoken &
+                    written English)
+                  </li>
+                  <li>
+                    ✔️ Experience with cold outreach (calls, DMs, emails) and
+                    CRM tools
+                  </li>
+                  <li>
+                    ✔️ Confident in handling onboarding documents and intro
+                    calls
+                  </li>
+                  <li>
+                    ✔️ Friendly, well-organized, and able to build trust quickly
+                  </li>
+                  <li>
+                    ✔️ Background in sales or logistics is a plus — we train the
+                    right people
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="apply-button"
+                onclick="applyForJob('Sales & Onboarding Agent')"
+              >
+                Apply for Sales & Onboarding Role
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Career FAQs -->
+        <section class="faq-section">
+          <div class="container">
+            <h2 class="section-title">❓ Career FAQs</h2>
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Do you hire for remote positions only?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Yes, all our positions are 100% remote. We work with
+                    talented professionals globally while serving U.S. clients.
+                    You can work from anywhere as long as you can handle U.S.
+                    business hours (EST) and have reliable internet.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What are the working hours for remote positions?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Most of our positions require availability during U.S.
+                    business hours (EST), typically 9 AM - 6 PM EST. Some roles
+                    may require evening or night shifts to match U.S. time
+                    zones. Specific hours will be discussed during the interview
+                    process.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Do you provide training for new hires?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Absolutely! We provide comprehensive paid training for all
+                    new team members. You'll learn our systems, processes, and
+                    industry best practices. We believe in growing talent from
+                    within and provide ongoing skill development opportunities.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Are there opportunities for career growth?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Yes! FlyRoad Dispatch is rapidly growing, and we promote
+                    from within. Many of our team leads and supervisors started
+                    in entry-level positions. We offer clear career progression
+                    paths, performance bonuses, and leadership development
+                    opportunities.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What benefits do you offer to remote employees?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We offer competitive salaries, performance bonuses, paid
+                    training, flexible schedules, and opportunities to work with
+                    leading U.S. logistics companies. Additional benefits may
+                    include health allowances and professional development funds
+                    depending on the role and location.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- About Page -->
+      <div id="about-page" class="page">
+        <section class="about-hero">
+          <div class="container">
+            <div class="about-hero-content">
+              <div class="about-hero-text" data-aos="fade-right">
+                <h1>🌐 About FlyRoad Dispatch LLC</h1>
+                <h2>🚛 FlyRoad Dispatch – Where Roads Meet Reliability</h2>
+                <p>
+                  At FlyRoad Dispatch, we do more than move freight — we move
+                  businesses forward. From the icy lanes of Canada to the
+                  southern routes of Mexico, and across every major U.S. highway
+                  in between, we keep your logistics running smoothly, so you
+                  can focus on growth — not guesswork.
+                </p>
+                <br />
+                <p>
+                  With a dedicated team of expert dispatchers, real-time
+                  tracking, and a vast carrier network, we offer you complete
+                  peace of mind. No ghosting. No last-minute delays. No
+                  confusing paperwork. We handle it all — from booking to
+                  delivery.
+                </p>
+              </div>
+              <div class="about-hero-image" data-aos="fade-left">
+                <img src="./assets/logo.png" alt="About FlyRoad Dispatch" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+          <div class="container">
+            <h2 class="section-title">❓ Frequently Asked Questions (FAQs)</h2>
+            <div class="faq-container">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Do you only work with U.S.-based clients?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    No. While the majority of our clients are based in the U.S.
+                    and Canada, our dispatching and admin teams operate
+                    globally. We're proud to be India-based and serve North
+                    American logistics with precision, communication, and
+                    round-the-clock reliability.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What types of equipment do you dispatch for?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We currently support Dry Vans, Reefers, Flatbeds, and Power
+                    Only. Our team is experienced in lane planning, load
+                    optimization, and carrier-driver matching across all four
+                    equipment types.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>
+                    I'm a new owner-operator. Can I still work with FlyRoad
+                    Dispatch?
+                  </h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Absolutely. We support both new authorities (MCs) and
+                    veteran carriers. We can help with paperwork, onboarding,
+                    factoring integration, and getting you high-paying loads
+                    even if you're just starting out.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What kind of remote roles do you hire for?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>We regularly hire for:</p>
+                  <ul>
+                    <li>✔️ Freight Dispatchers</li>
+                    <li>✔️ Customer Support Executives</li>
+                    <li>✔️ Load Booking Specialists</li>
+                    <li>✔️ Sales & Onboarding Agents</li>
+                  </ul>
+                  <p>
+                    If you're sharp, driven, and ready to work U.S. shifts—we
+                    want you on our team.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>How fast can you find me a load?</h3>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    In most cases, our dispatchers can find a suitable load
+                    within 30 minutes of your availability, thanks to our access
+                    to premium load boards and broker relationships. Timing may
+                    vary based on lane, equipment, and day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h3>🚛 FlyRoad Dispatch LLC</h3>
+            <p>Where Roads Meet Reliability</p>
+            <div class="footer-address">
+              <p>
+                5830 E 2nd St, Ste<br />
+                7000 #26177, Casper<br />
+                Wyoming 82609 US
+              </p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-nav">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="#home" data-page="home">Home</a></li>
+                <li><a href="#service" data-page="service">Service</a></li>
+                <li><a href="#hiring" data-page="hiring">Hiring</a></li>
+                <li><a href="#about" data-page="about">About</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <h4>Connect With Us</h4>
+              <div class="social-links">
+                <a href="#" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="footer-contact">
+                <p>📧 Email: dispatch@flyroaddispatch.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 FlyRoad Dispatch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                autocomplete="off"
+              />
+              <label for="firstName">First Name</label>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                autocomplete="off"
+              />
+              <label for="lastName">Last Name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" autocomplete="off" />
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="email" name="email" autocomplete="off" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <select id="status" name="status">
+              <option value="">Select Status</option>
+              <option value="broker">Broker/Shipper/Manufacturer</option>
+              <option value="career">Career/Driver/Owner Operator</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" autocomplete="off"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
